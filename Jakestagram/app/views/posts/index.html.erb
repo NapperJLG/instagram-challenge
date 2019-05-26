@@ -3,6 +3,6 @@
 <% @posts.each do |post| %>
 <p><%= post.text %></p>
 <% if post.post_picture.attached? %>
-<img src="<%= (url_for (post.post_picture)) %>" alt="">
+<img src="<%= (url_for (post.gallery_view)) %>" alt="">
 <% end %>
 <% end %>
