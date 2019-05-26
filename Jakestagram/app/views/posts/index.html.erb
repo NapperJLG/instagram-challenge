@@ -1,2 +1,8 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Jakestagram</h1>
+
+<% @posts.each do |post| %>
+<p><%= post.text %></p>
+<% if post.post_picture.attached? %>
+<img src="<%= (url_for (post.post_picture)) %>" alt="">
+<% end %>
+<% end %>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= form_for @post do |form| %>
+  <%= form.label :text %>
+  <%= form.text_area :text %>
+
+  <%= form.label :post_picture %>
+  <%= form.file_field :post_picture %>
+
+  <%= form.submit "Submit" %>
+<% end %>
+  </body>
+</html>
