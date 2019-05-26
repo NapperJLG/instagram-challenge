@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p><%= @post.text %></p>
+    <% if @post.post_picture.attached? %>
+    <img src="<%= (url_for (@post.post_picture)) %>" alt="">
+    <% end %>
+  </body>
+</html>

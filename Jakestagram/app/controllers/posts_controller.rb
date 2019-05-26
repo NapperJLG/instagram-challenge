@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+
   def index
     @posts = Post.all
   end
@@ -11,6 +11,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     redirect_to posts_url
+  end
+
+  def show
+    @post = Post.find(params[:id])
   end
 
   private

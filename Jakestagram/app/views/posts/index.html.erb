@@ -2,6 +2,7 @@
 
 <% @posts.each do |post| %>
 <p><%= post.text %></p>
+<p><%= link_to 'View Post', post_path(post) %></p>
 <% if post.post_picture.attached? %>
 <img src="<%= (url_for (post.gallery_view)) %>" alt="">
 <% end %>
