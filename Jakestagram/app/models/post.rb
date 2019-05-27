@@ -7,4 +7,8 @@ has_many :posts
 def gallery_view
   return self.post_picture.variant(resize: '300x300').processed
 end
+
+def post_view
+  return self.post_picture.variant(resize: '600x600').processed
+end
 end

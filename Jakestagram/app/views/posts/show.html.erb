@@ -5,9 +5,9 @@
     <title></title>
   </head>
   <body>
-    <p><%= @post.text %></p>
+    <h2><%= @post.text %></h2>
     <% if @post.post_picture.attached? %>
-    <img src="<%= (url_for (@post.post_picture)) %>" alt="">
+    <img src="<%= (url_for (@post.post_view)) %>" alt="">
     <% end %>
 
 

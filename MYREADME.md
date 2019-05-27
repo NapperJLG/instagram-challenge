@@ -29,3 +29,16 @@ As a User
 So that I can show appreciation for other peoples pictures
 I want to be able to 'like' other users pictures
 ```
+### Installing/Running The ApplicationRecord
+
+ - Clone the repo
+```
+bundle install
+rake db:create
+rake db:migrate
+```
+
+### Still to do
+- Link users to posts/comments - the post/comment should display the user that posted it
+- CSS
+- TESTING!!!
