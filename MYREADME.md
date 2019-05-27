@@ -40,5 +40,6 @@ rake db:migrate
 
 ### Still to do
 - Link users to posts/comments - the post/comment should display the user that posted it
+- Adding a 'like' function
 - CSS
 - TESTING!!!
