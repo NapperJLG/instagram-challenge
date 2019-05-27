@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
 has_one_attached :post_picture
+has_many :comments
 
 def gallery_view
   return self.post_picture.variant(resize: '300x300').processed
